@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas Zeugs</title>
+        <script defer src="/socket.io/socket.io.js"></script>
+        <script defer src="canvas.js"></script>
+        <script defer src="user_list.js"></script>
+        <script defer src="navbar.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="sidenav" id="navbar">
+            <span id="topButton" onclick='closeNav()'>&times;</span>
+            <p><b>Menu</b></p>
+            <a href="main.html">Main</a>
+            <a href="style.css">Die tolle CSS Datei</a>
+            <a onclick="buttonfunc()" href="#">Nachricht an Server</a>
+            <a href="canvas.html">Canvas Zeugs</a>
+        </div>
+        
+        <div>
+            <span id="navbtn" onclick='openNav()'>&#9776;</span>
+        </div>
+
+        <div class="content">
+            <h2>Schau mal, eine Leinwand!</h2>
+            <p>Keine Sorge, sie tut nichts</p>
+            <canvas id="drawCanvas" width="800" height="600"></canvas>
+            <div id="textbox">
+                <h2>Text und so</h2>
+                <ul id='messages' style="list-style-type: none;"><li style="color: rgb(133, 132, 132);">Messages</li></ul>
+            </div>
+        </div>
+    </body>
+</html>

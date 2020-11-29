@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav {
+  transition: 0.4s;
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(54, 54, 54);
+  overflow-x: hidden;
+  white-space: nowrap;
+  overflow-y: auto;
+}
+
+.sidenav p {
+  padding: 16px;
+  color: rgb(168, 248, 158);
+  font-size: 20px;
+}
+
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+}
+
+#navbtn {
+  color: rgb(26, 30, 65);
+  padding: 16px;
+  margin: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#navbtn:hover {
+  color: rgb(31, 54, 255);
+}
+
+#topButton {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(255, 0, 0);
+  z-index: 2;
+  font-size: 30px;
+  cursor: pointer;
+  float: right;
+}
+
+#topButton:hover {
+  color: rgb(255, 192, 192);
+}
+
+.content {
+  margin-left: 100px;
+  padding-left: 20px;
+}
+
+#textbox > h2 {
+  text-align: center;
+}
+
+#textbox {
+  margin-right: 50px;
+  padding-right: 20px;
+  max-width: 400px;
+  width: 400px;
+  float: right;
+  border: 1px solid #000000;
+}
+
+#messages {
+  padding: 50px;
+  max-height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* canvas.html */
+
+#drawCanvas {
+  border: 1px solid #ff0000;
+}
+
+#drawCanvas:hover {
+  border: 1px solid #1eff00;
+}
