@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Canvas Zeugs</title>
         <script defer src="/socket.io/socket.io.js"></script>
         <script defer src="canvas.js"></script>
@@ -10,16 +13,16 @@
     </head>
     <body>
         <div class="sidenav" id="navbar">
-            <span id="topButton" onclick='closeNav()'>&times;</span>
+            <span id="topButton" onclick="closeNav()">&times;</span>
             <p><b>Menu</b></p>
             <a href="main.html">Main</a>
             <a href="style.css">Die tolle CSS Datei</a>
             <a onclick="buttonfunc()" href="#">Nachricht an Server</a>
             <a href="canvas.html">Canvas Zeugs</a>
         </div>
-        
+
         <div>
-            <span id="navbtn" onclick='openNav()'>&#9776;</span>
+            <span id="navbtn" onclick="openNav()">&#9776;</span>
         </div>
 
         <div class="content">
@@ -28,7 +31,9 @@
             <canvas id="drawCanvas" width="800" height="600"></canvas>
             <div id="textbox">
                 <h2>Text und so</h2>
-                <ul id='messages' style="list-style-type: none;"><li style="color: rgb(133, 132, 132);">Messages</li></ul>
+                <ul id="messages" style="list-style-type: none;">
+                    <li>Messages</li>
+                </ul>
             </div>
         </div>
     </body>

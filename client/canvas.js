@@ -3,8 +3,8 @@ const ctx = canvas.getContext('2d');
 
 let last_point = null;
 
-function draw(toX, toY){
-    ctx.lineCap = "round";
+function draw(toX, toY) {
+    ctx.lineCap = 'round';
     ctx.lineWidth = 5;
     ctx.moveTo(last_point.x, last_point.y);
     ctx.lineTo(toX, toY);
@@ -18,7 +18,7 @@ canvas.addEventListener('mousedown', (param) => {
 });
 
 canvas.addEventListener('mousemove', (param) => {
-    if (last_point != null){
+    if (last_point != null) {
         draw(param.layerX, param.layerY);
         last_point.x = param.layerX;
         last_point.y = param.layerY;

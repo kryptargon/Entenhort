@@ -1,7 +1,9 @@
+const nav = document.getElementById('navbar')
+
 function openNav() {
-    document.getElementById("navbar").style.width = "250px";
+    nav.style.width = '250px';
 }
-  
+
 function closeNav() {
-    document.getElementById("navbar").style.width = "0";
+    nav.style.width = '0px';
 }

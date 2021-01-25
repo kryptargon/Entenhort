@@ -10,7 +10,7 @@ body {
 .sidenav {
   transition: 0.4s;
   height: 100%;
-  width: 0px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -84,7 +84,7 @@ body {
   max-width: 400px;
   width: 400px;
   float: right;
-  border: 1px solid #000000;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 #messages {
@@ -94,12 +94,16 @@ body {
   overflow-y: auto;
 }
 
+#messages > li {
+  color: rgb(255, 192, 192);
+}
+
 /* canvas.html */
 
 #drawCanvas {
-  border: 1px solid #ff0000;
+  border: 1px solid rgb(255, 0, 0);
 }
 
 #drawCanvas:hover {
-  border: 1px solid #1eff00;
+  border: 1px solid rgb(30, 255, 0);
 }
