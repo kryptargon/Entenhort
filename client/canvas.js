@@ -22,7 +22,10 @@ canvas.addEventListener('mouseup', () => {
     last_point = null;
 });
 
-canvas.addEventListener('mouseout', () => {
+canvas.addEventListener('mouseout', ({layerX, layerY}) => {
+    if (last_point != null) {
+        draw(layerX, layerY);
+    }
     last_point = null;
 });
 
