@@ -1,8 +1,9 @@
 const socket = io();
+const ping = document.getElementById('ping')
 
-const buttonfunc = function() {
+ping.addEventListener('click', () => {
     socket.emit('pack_users');
-};
+});
 
 socket.on('user_list', list => {
     const msgBox = document.getElementById('messages');
